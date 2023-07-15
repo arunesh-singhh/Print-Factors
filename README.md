@@ -15,3 +15,28 @@ Sample Input 2 : 11
 Sample Output 2 : -1
 
 Explanation of Sample Output 2 : 11 is a prime number having factors 1 and 11 so that output will be -1.
+
+    import java.util.Scanner;       // for using Scanner
+
+    public class Print_Factor {
+
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            int n = sc.nextInt();
+            int div = 2;
+            boolean isprime = true;
+
+            while(div < n){
+                if(n % div == 0){
+                    System.out.print(div + " ");
+                    isprime = false;
+                }
+                div++;
+            }
+            if(isprime){
+                System.out.println("-1");
+            }
+            sc.close();                   // foe closing scanner
+        }
+    
+    }
