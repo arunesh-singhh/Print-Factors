@@ -20,5 +20,4 @@ public class Print_Factor {
         }
         sc.close();
     }
-    
 }
